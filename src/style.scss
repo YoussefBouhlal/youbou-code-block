@@ -1,0 +1,161 @@
+.youbou-block {
+	display: block;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    padding: 0;
+    position: relative;
+    z-index: 0;
+
+	& pre {
+    	display: block;
+    	font-size: 14px;
+    	letter-spacing: .1px;
+    	line-height: 1.8;
+		word-wrap: normal;
+		background: #f7f6f6;
+		color: #1f1e1e;
+		hyphens: none;
+		tab-size: 4;
+		text-align: left;
+		text-shadow: 0 1px #ffffff;
+		white-space: pre;
+		word-break: normal;
+		word-spacing: normal;
+		border: none;
+		border-radius: 0;
+    	box-sizing: border-box;
+    	overflow: auto;
+    	padding: 1.75em 1.5em;
+    	margin: 0;
+
+		&::before {
+			content: attr(data-file);
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-size: 12px;
+			color: #1f1e1e;
+			z-index: 1;
+			background-color: #dedede;
+			padding: 0px 5px;
+		}
+
+		&.line-numbers {
+			counter-reset: linenumber;
+			position: static;
+			padding-left: 3.75em;
+
+			& > code {
+				position: relative;
+
+				.token.comment,
+				.token.prolog,
+				.token.doctype,
+				.token.cdata {
+					color: #708090;
+				}
+
+				.token.punctuation {
+					color: #5f5f5f;
+				}
+
+				.namespace {
+					opacity: 0.7;
+				}
+
+				.token.property,
+				.token.tag,
+				.token.boolean,
+				.token.number,
+				.token.constant,
+				.token.symbol,
+				.token.deleted {
+					color: #905;
+				}
+
+				.token.selector,
+				.token.attr-name,
+				.token.string,
+				.token.char,
+				.token.builtin,
+				.token.inserted,
+				.token.class-name {
+					color: #407b08;
+				}
+
+
+				.token.entity,
+				.token.url,
+				.language-css .token.string,
+				.style .token.string {
+					color: #9a6e3a;
+				}
+
+				.token.atrule,
+				.token.attr-value,
+				.token.function {
+					color: #07a;
+				}
+
+				.token.keyword,
+				.token.operator {
+					color: #c72c4c;
+				}
+
+				.token.regex,
+				.token.keyword.this,
+				.token.important,
+				.token.variable {
+					color: #f18106;
+				}
+
+
+				.token.bold {
+					font-weight: bold;
+				}
+
+				.token.italic,
+				.token.builtin,
+				.token.keyword.def {
+					font-style: italic;
+				}
+
+				.token.entity {
+					cursor: help;
+				}
+
+
+				.token.delimiter.important {
+					color: #183d86;
+					font-weight: normal;
+				}
+			}
+
+			& .line-numbers-rows {
+				position: absolute;
+				top: -2px;
+				left: -3.75em;
+				width: 3em;
+				letter-spacing: -1px;
+				border-right: 1px solid #999999;
+				pointer-events: none;
+				user-select: none;
+
+				& > span {
+					counter-increment: linenumber;
+					display: block;
+					pointer-events: none;
+
+					&::before {
+						content: counter(linenumber);
+						display: block;
+						text-align: right;
+						color: #999999;
+						padding-right: 0.8em;
+					}
+				}
+			}
+		}
+	}
+
+}

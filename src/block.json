@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/youbou-code-block",
+	"version": "0.1.0",
+	"title": "Youbou Code Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Code block with syntax highlighting for gutenberg editor.",
+	"supports": {
+		"html": false,
+		"className": false
+	},
+	"attributes": {
+        "code": {
+            "type": "string",
+            "source": "text",
+            "selector": "code"
+        },
+        "langType": {
+            "type": "string",
+            "default": ""
+        },
+        "langName": {
+            "type": "string",
+            "default": ""
+        },
+        "fileName": {
+            "type": "string",
+            "default": ""
+        }
+    },
+	"textdomain": "youbou-code-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

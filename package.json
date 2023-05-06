@@ -1,0 +1,20 @@
+{
+	"name": "youbou-code-block",
+	"version": "1.0.0",
+	"description": "Code block with syntax highlighting for gutenberg editor.",
+	"author": "Youssef Bouhlal",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"dev": "wp-scripts start",
+		"prod": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.3.0"
+	}
+}
