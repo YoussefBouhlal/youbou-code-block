@@ -4,17 +4,15 @@
 	"description": "Code block with syntax highlighting for gutenberg editor.",
 	"author": "Youssef Bouhlal",
 	"license": "GPL-2.0-or-later",
-	"main": "build/index.js",
 	"scripts": {
-		"dev": "wp-scripts start",
-		"prod": "wp-scripts build",
-		"format": "wp-scripts format",
-		"lint:css": "wp-scripts lint-style",
-		"lint:js": "wp-scripts lint-js",
-		"packages-update": "wp-scripts packages-update",
-		"plugin-zip": "wp-scripts plugin-zip"
+		"start": "wp-scripts start",
+		"build": "wp-scripts build",
+		"packages-update": "wp-scripts packages-update"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^26.3.0"
+		"@wordpress/scripts": "^27.9.0"
+	},
+	"dependencies": {
+		"prismjs": "^1.29.0"
 	}
 }
