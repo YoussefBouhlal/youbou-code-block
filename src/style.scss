@@ -1,32 +1,32 @@
 .youbou-block {
 	display: block;
-    margin-bottom: 2em;
-    margin-top: 2em;
-    padding: 0;
-    position: relative;
-    z-index: 0;
+	margin-bottom: 2em;
+	margin-top: 2em;
+	padding: 0;
+	position: relative;
+	z-index: 0;
 
-	& pre {
-    	display: block;
-    	font-size: 14px;
-    	letter-spacing: .1px;
-    	line-height: 1.8;
+	pre {
+		display: block;
+		font-size: 14px;
+		letter-spacing: 0.1px;
+		line-height: 1.8;
 		word-wrap: normal;
 		background: #f7f6f6;
 		color: #1f1e1e;
 		hyphens: none;
 		tab-size: 4;
 		text-align: left;
-		text-shadow: 0 1px #ffffff;
+		text-shadow: 0 1px #fff;
 		white-space: pre;
 		word-break: normal;
 		word-spacing: normal;
 		border: none;
 		border-radius: 0;
-    	box-sizing: border-box;
-    	overflow: auto;
-    	padding: 1.75em 1.5em;
-    	margin: 0;
+		box-sizing: border-box;
+		overflow: auto;
+		padding: 1.75em 1.5em;
+		margin: 0;
 
 		&::before {
 			content: attr(data-file);
@@ -37,7 +37,7 @@
 			color: #1f1e1e;
 			z-index: 1;
 			background-color: #dedede;
-			padding: 0px 5px;
+			padding: 0 5px;
 		}
 
 		&.line-numbers {
@@ -45,7 +45,7 @@
 			position: static;
 			padding-left: 3.75em;
 
-			& > code {
+			> code {
 				position: relative;
 
 				.token.comment,
@@ -111,7 +111,7 @@
 
 
 				.token.bold {
-					font-weight: bold;
+					font-weight: 700;
 				}
 
 				.token.italic,
@@ -127,21 +127,21 @@
 
 				.token.delimiter.important {
 					color: #183d86;
-					font-weight: normal;
+					font-weight: 400;
 				}
 			}
 
-			& .line-numbers-rows {
+			.line-numbers-rows {
 				position: absolute;
 				top: -2px;
 				left: -3.75em;
 				width: 3em;
 				letter-spacing: -1px;
-				border-right: 1px solid #999999;
+				border-right: 1px solid #999;
 				pointer-events: none;
 				user-select: none;
 
-				& > span {
+				> span {
 					counter-increment: linenumber;
 					display: block;
 					pointer-events: none;
@@ -150,7 +150,7 @@
 						content: counter(linenumber);
 						display: block;
 						text-align: right;
-						color: #999999;
+						color: #999;
 						padding-right: 0.8em;
 					}
 				}
