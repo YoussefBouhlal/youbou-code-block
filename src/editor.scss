@@ -1,25 +1,25 @@
-.youbou-block {
+.youboucodeblock {
 	position: relative;
 	border: 1px solid #f1f1f1;
 
-	&__code {
+	&__container {
 		background-color: #f7f6f6;
+	}
 
-		&__textarea {
-			display: block;
-			font-family: Menlo, Consolas, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-			font-size: 14px;
-			line-height: 1.8;
-			color: #1f1e1e;
-			width: calc(100% - 2em);
-			border: none;
-			border-radius: 0;
-			outline: none !important;
-			box-shadow: none !important;
-			background-color: #f7f6f6;
-			margin: 0 0 0 2em;
-			padding: 1.5em 1.5em 1.5em 0.5em;
-		}
+	&__textarea {
+		display: block;
+		font-family: Menlo, Consolas, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+		font-size: 14px;
+		line-height: 1.8;
+		color: #1f1e1e;
+		width: calc(100% - 2em);
+		border: none;
+		border-radius: 0;
+		outline: none !important;
+		box-shadow: none !important;
+		background-color: #f7f6f6;
+		margin: 0 0 0 2em;
+		padding: 1.5em 1.5em 1.5em 0.5em;
 	}
 
 	&__controls {
@@ -32,5 +32,4 @@
 			margin-bottom: 0;
 		}
 	}
-
 }

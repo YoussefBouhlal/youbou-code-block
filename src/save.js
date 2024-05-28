@@ -1,6 +1,6 @@
 import { RichText, useBlockProps } from '@wordpress/block-editor';
 
-import { sanitizeCodeblock } from './utils';
+import { sanitizeCodeblock } from './components/utils';
 
 export default function save( { attributes } ) {
 

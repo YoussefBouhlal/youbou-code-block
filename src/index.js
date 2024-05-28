@@ -3,13 +3,13 @@ import { Icon } from '@wordpress/components';
 
 import './style.scss';
 
-import IconSvg from './icon-svg';
-import Edit from './edit';
+import iconSvg from './components/icon-svg';
+import edit from './edit';
 import save from './save';
 import metadata from './block.json';
 
 registerBlockType( metadata.name, {
-    icon: <Icon icon={IconSvg} />,
-	edit: Edit,
+    icon: <Icon icon={iconSvg} />,
+	edit,
 	save,
-} );
+});
