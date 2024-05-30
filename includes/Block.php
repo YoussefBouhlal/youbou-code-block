@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 final class Block {
 
-    /**
+	/**
 	 * Initialize hooks
 	 *
 	 * @return void
