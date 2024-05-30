@@ -4,9 +4,9 @@ import { sanitizeCodeblock } from './components/utils';
 
 export default function save( { attributes } ) {
 
-	const { code, fileName, langName } = attributes;
+	const { code } = attributes;
 	const langType = attributes.langType || 'plain';
-	const preClass = `prism line-numbers lang-${ langType }`;
+	const preClass = `line-numbers lang-${ langType }`;
 
 	const blockProps = useBlockProps.save( {
 		className: 'youbou-block',
@@ -14,11 +14,7 @@ export default function save( { attributes } ) {
 
 	return (
 		<div { ...blockProps }>
-			<pre
-				className={ preClass }
-				data-file={ fileName || null }
-				data-lang={ langName || null }
-			>
+			<pre className={ preClass }>
 				<RichText.Content tagName='code' value={ sanitizeCodeblock( code ) } />
 			</pre>
 		</div>

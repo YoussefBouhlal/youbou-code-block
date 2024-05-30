@@ -34,6 +34,6 @@ final class Block {
 	 * @return void
 	 */
 	public function register_blocks() {
-		register_block_type( Utils::plugin_path() . '/build' );
+		register_block_type( Utils::plugin_path() . '/build/v-1' );
 	}
 }
