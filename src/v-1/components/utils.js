@@ -19,7 +19,7 @@ export const supportedLangs = {
 	json: 'JSON',
 	bash: 'Bash',
 	git: 'Git',
-}
+};
 
 /**
  * List of languages
@@ -31,20 +31,21 @@ export const listLangs = [
 	},
 ];
 for ( const langValue in supportedLangs ) {
-	const langLabel = supportedLangs[langValue];
+	const langLabel = supportedLangs[ langValue ];
 	listLangs.push( {
 		value: langValue,
 		label: langLabel,
-	});
+	} );
 }
 
 /**
  * Function for setting code block height
+ * @param {HTMLElement} elem
  */
-export function setHeightCodeBlocks(elem) {
-	const num = elem.value.match(/\r\n|\n/g);
+export function setHeightCodeBlocks( elem ) {
+	const num = elem.value.match( /\r\n|\n/g );
 	let line;
-	if (null !== num) {
+	if ( null !== num ) {
 		line = num.length + 1;
 	} else {
 		line = 1;
@@ -54,14 +55,15 @@ export function setHeightCodeBlocks(elem) {
 
 /**
  * Sanitize function
+ * @param {string} str
  */
-export function sanitizeCodeblock(str) {
-	if (str) {
+export function sanitizeCodeblock( str ) {
+	if ( str ) {
 		return str
-			.replace(/</g, '&lt;')
-			.replace(/>/g, '&gt;')
-			.replace(/"/g, '&quot;')
-			.replace(/'/g, '&#39;');
+			.replace( /</g, '&lt;' )
+			.replace( />/g, '&gt;' )
+			.replace( /"/g, '&quot;' )
+			.replace( /'/g, '&#39;' );
 	}
 	return str;
 }

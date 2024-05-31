@@ -1,1 +1,1 @@
-import './libs/prism/prism';
+import '../../assets/libs/prism/prism';
