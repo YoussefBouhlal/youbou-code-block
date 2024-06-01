@@ -54,9 +54,9 @@ final class Main {
 		$blocks = new Block();
 		$blocks->hooks();
 
-		load_plugin_textdomain( 'youboushowhooks', false, plugin_basename( PLUGIN_FILE ) . '/languages' );
+		load_plugin_textdomain( 'youboucodeblock', false, plugin_basename( PLUGIN_FILE ) . '/languages' );
 
-		do_action( 'youboushowhooks_loaded' );
+		do_action( 'youboucodeblock_loaded' );
 	}
 
 	/**
@@ -71,12 +71,12 @@ final class Main {
 
 		if ( ! version_compare( PHP_VERSION, self::PLUGIN_REQUIREMENTS['php_version'], '>=' ) ) {
 			/* Translators: The minimum PHP version */
-			$errors[] = sprintf( esc_html__( 'Youbou Show Hooks Plugin requires a minimum PHP version of %s.', 'youboushowhooks' ), self::PLUGIN_REQUIREMENTS['php_version'] );
+			$errors[] = sprintf( esc_html__( 'Youbou Show Hooks Plugin requires a minimum PHP version of %s.', 'youboucodeblock' ), self::PLUGIN_REQUIREMENTS['php_version'] );
 		}
 
 		if ( ! version_compare( $wp_version, self::PLUGIN_REQUIREMENTS['wp_version'], '>=' ) ) {
 			/* Translators: The minimum WP version */
-			$errors[] = sprintf( esc_html__( 'Youbou Show Hooks Plugin requires a minimum WordPress version of %s.', 'youboushowhooks' ), self::PLUGIN_REQUIREMENTS['wp_version'] );
+			$errors[] = sprintf( esc_html__( 'Youbou Show Hooks Plugin requires a minimum WordPress version of %s.', 'youboucodeblock' ), self::PLUGIN_REQUIREMENTS['wp_version'] );
 		}
 
 		if ( empty( $errors ) ) {

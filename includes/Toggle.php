@@ -22,7 +22,7 @@ final class Toggle {
 	 */
 	public function activate() {
 
-		do_action( 'youboushowhooks_activate' );
+		do_action( 'youboucodeblock_activate' );
 	}
 
 	/**
@@ -30,6 +30,6 @@ final class Toggle {
 	 */
 	public function deactivate() {
 
-		do_action( 'youboushowhooks_deactivate' );
+		do_action( 'youboucodeblock_deactivate' );
 	}
 }
