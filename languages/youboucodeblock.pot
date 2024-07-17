@@ -9,29 +9,34 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-06-01T09:56:33+00:00\n"
+"POT-Creation-Date: 2024-07-17T21:27:20+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
-"X-Domain: youboucodeblock\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: youbou-code-block\n"
 
 #. Plugin Name of the plugin
+#: youbou-code-block.php
 msgid "Youbou Code Block"
 msgstr ""
 
 #. Plugin URI of the plugin
+#: youbou-code-block.php
 msgid "https://github.com/YoussefBouhlal/youbou-code-block"
 msgstr ""
 
 #. Description of the plugin
+#: youbou-code-block.php
 msgid "Code block with syntax highlighting for gutenberg editor."
 msgstr ""
 
 #. Author of the plugin
+#: youbou-code-block.php
 msgid "Youssef Bouhlal"
 msgstr ""
 
 #. Author URI of the plugin
-msgid "https://youssefbouhlal.com"
+#: youbou-code-block.php
+msgid "pro.youssef.bouhlal@gmail.com"
 msgstr ""
 
 #. Translators: The minimum PHP version
@@ -42,11 +47,6 @@ msgstr ""
 #. Translators: The minimum WP version
 #: includes/Main.php:79
 msgid "Youbou Show Hooks Plugin requires a minimum WordPress version of %s."
-msgstr ""
-
-#: build/v-1/index.js:1
-#: src/v-1/edit.js:60
-msgid "Your Code…"
 msgstr ""
 
 #: build/v-1/block.json
